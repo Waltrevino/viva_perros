@@ -8,154 +8,87 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/5.8.2/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
     <title>Viva Perros</title>
-    <style>
-        body {
-            background-image: url("./images/antiquepaper_1920x1234.jpg");
-        }
 
-        #logo {
-            width: 100px;
-            height: 100px;
-        }
-
-        #header {
-           
-            /* background-image: url("https://images.unsplash.com/photo-1593701948098-5fe9748bae23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"); */
-            background-size: cover;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-            width: 100%;
-        }
-
-        #header>div {
-            text-align: center;
-        }
-
-        .container {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        #content {
-            width: 100%;
-
-        }
-
-        .logo_text {
-            color: rgb(83, 33, 5);
-            font-size: 3em;
-            font-family: 'Cedarville Cursive', cursive;
-        }
-
-        #menu {}
-
-        .carousel {
-            height: 300px;
-            width: 100%;
-
-        }
-
-        .navbar {
-            margin-bottom: 0px;
-        }
-
-        #footer_container {
-            /* background-image: url("./images/bg_hardwood_floors.png"); */
-            width: 100%;
-            text-align: center;
-            
-        }
-
-        .footer_buttons {
-            border: solid red 1px;
-           
-            display: flex;
-            align-items: center;
-           
-            
-        }
-
-        button {
-            height: 50px;
-        }
-
-        img {
-            margin-top: .25em;
-            
-        }
-    </style>
 </head>
 
 <body>
     <div id="header">
-        <div>
+        <div class="logo_box">
             <span class="logo_text">Viva</span>
-        </div>
-        <!-- <div class="image"><img src="" alt=""></div> -->
-        <div class=""><img id="logo" src="./images/logo.png" alt=""></div>
 
-        <div>
+            <!-- <div class="image"><img src="" alt=""></div> -->
+            <img id="logo" src="./images/logo.png" alt="">
+
+
             <span class="logo_text">Perros</span>
 
         </div>
     </div>
-    <div class="container_i">
-        <div id="home_page">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Viva Perros</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
-                                        class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Page 1-1</a></li>
-                                    <li><a href="#">Page 1-2</a></li>
-                                    <li><a href="#">Page 1-3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+ 
+                <a class="navbar-brand" href="#">Viva Perros</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Adoptions <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Succes Stories</a></li>
+                            <li><a href="#">Meet Our Adoptable Dogs</a></li>
+                            <li><a href="#">Adoption Application</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <img class="carousel" src="./images/lupe_figurines.jpg" alt="">
-            <img class="carousel" src="./images/stella_guster.jpg" alt="">
-            <div id="footer_container">
-                
-
-                    <div class="footer_buttons">
-                            <button>Donate</button>
-<!--                             <button>Donate</button> -->
-<!--                             <button>Foster</button> -->
-
-                    </div>
-                   
-                    <span class="logo_text">Viva Perros</span>
-                    <p>© Copyright 2020 - All Rights Reserved.</p>
-                    <i class="fa fa-facebook-f"></i>
-               
-
+                    </li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul> -->
             </div>
         </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="home_page">
+            
+            <div class="carousel_main">
+                <img class="carousel" src="./images/lupe_figurines.jpg" alt="">
+            </div>
+
+            <div class="carousel_dashboard">
+                <img class="carousel" src="./images/stella_guster.jpg" alt="">
+            </div>
+
+            <div class="home_buttons">
+                  <button class="">Foster</button>
+                <button class="">Donate</button>
+                <button class="">Adopt</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer_container">
+
+        <span class="logo_text_footer">Viva Perros</span>
+        <p class="">© Copyright 2020</p>
     </div>
 </body>
 
