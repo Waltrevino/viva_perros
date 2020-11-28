@@ -1,14 +1,21 @@
-window.onscroll = function() {applyStickyy()};
+// window.onscroll = function() {applyStickyy()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
 
-function applySticky(){
-  if(window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+// function applySticky(){
+//   if(window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+// console.log(sticky);
+var btn = document.getElementById("myButton");
+
+function displayMessage(){
+  alert("Hello");
 }
 
-console.log(sticky);
+btn.addEventListener("click", displayMessage);

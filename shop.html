@@ -12,20 +12,24 @@
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 </head>
 <body>
-  <header>
-    <div class="wrapper_header">
-      <div class="wrapper_header_header">
-        <i class="fas fa-paw"></i>
-          <span class="header_text pl-2">Viva</span><img class="" id="logo_header" src="./assets/imgs/logo.png" alt="img"><span class="header_text pr-2">Perros</span>
-        <i class="fas fa-paw"></i>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-main">
+        <div class="header-main-top">
+          <i class="fas fa-paw"></i>
+          <span class="header-text pl-2">Viva</span><img class="" id="header-logo" src="./assets/imgs/logo.png"
+            alt="img"><span class="header-text pr-2">Perros</span>
+          <i class="fas fa-paw"></i>
+        </div>
+        <span class="header-main-bottom">Helping homeless and abused dogs get the medical care they need and help find them good homes.</span>
       </div>
-        <p>...helping homeless and abused dogs get the medical care they need and help finding them good homes.</p>
     </div>
-</header>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+  </header>
+  <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo"><img id="img_logo" src="./assets/imgs/logo.png" alt="">Viva
-        Perros</a>
+      <a class="navbar-brand" href="index.html" id="logo"><div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png" alt="logo_img"><span class="navbar-brand-text">Viva
+        Perros</span></div>
+      </a>        
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,32 +71,30 @@
   <!-- End of navbar -->
 
   <!-- Start of container -->
-  <div class="container block container-test">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="block-header text-center" style="margin-top: 1rem">Shop</h1>
+  <div class="container container-all">
+    <div class="shop-main">
+        <h1 class="block-header">Shop</h1>
         <hr />
-      </div>
     </div>
-
-    <hr>
   </div>
-
- 
   <!-- End of container -->
 
   <!-- Start of footer -->
-  <footer class="footer" style="padding: 1.5rem 1rem 0rem 1rem">
-    <div class="wrapper_footer">
-      <p>Viva Perros</p>
-      <p style="font-size: .5rem;" class="text-muted">
-        &copy; Copyright 2020
-      </p>
-      <ul class="d-flex justify-content-center" style="font-size: 2em;">
-        <li class="d-inline"><a href=""><i class="fab fa-facebook"></i></a></li>
-        <li class="d-inline"><a href=""><i class="fab fa-instagram"></i></a></li>
-        <li class="d-inline"><a href=""><i class="fas fa-envelope"></i></a></li>
-      </ul>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-main">
+        <div>
+          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
+        </div>
+        <p class="text-muted">
+          &copy; Copyright 2020
+        </p>
+        <ul class="footer-contact-social">
+          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <!-- End of footer -->
