@@ -30,6 +30,7 @@ h2, h3, h4, h5 {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 4px;
+  font-size: 34px;
 }
 
 .header-wrapper {
@@ -101,7 +102,7 @@ nav {
   top: 4px;
   font-size: 1.5em;
   font-weight: bold;
-  color: rgb(83, 33, 5);
+  color: rgba(83, 33, 5,.8);
   font-family: 'Cedarville Cursive', cursive;
   padding-left: 4px;
 }
@@ -132,11 +133,13 @@ nav {
 .nav-item  a:hover {
   background-color:  rgb(83, 33, 5);
   color: #ffffff;
-  
 }
+
+.navbar-toggler {}
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(83, 33, 5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  
 }
 
 .container {
@@ -263,6 +266,19 @@ nav {
   list-style-type: none;
 }
 
+/*Learn to USE*/
+/*-------------------------------*/
+/*https://www.youtube.com/watch?v=UOKQ6gw21NA&feature=youtu.be*/
+.partners {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.myP {
+  max-width: 20em;
+  hyphens: auto;
+}
+/*-------------------------------*/
 .about-wrapper {
   padding-bottom: 6em;
 }
@@ -610,12 +626,16 @@ nav {
     padding: .5em;
   }
 
+  .header-main {
+    line-height: 1em;
+  }
+
   .header-main-top > i {
     font-size: 1.25em;
   }
   
   .header-main-bottom {
-    font-size: 7px;   
+    font-size: 10px;   
   }
   
   .header-text {
