@@ -1,0 +1,275 @@
+.shop-portal-wrapper-show {
+  color: var(--color-gold);
+  font-weight: bolder;
+  background: var(--main-background);
+  /* opacity: .97; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slowlyAppear .7s linear;
+}
+
+@keyframes slowlyAppear {
+  0% {
+    transform: scale(0.5);
+  }
+  25% {
+    transform: scale(0.70);
+  }
+  75% {
+    transform: scale(0.90);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shop-portal-container {
+  width: 95%;
+  height: 95%;
+  background: var(--color-black-o);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#close-portal-btn {
+  background: white;
+  border-radius: 100%;
+  font-size: 1.75em;
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: red;
+}
+
+#close-portal-btn:hover {
+  transform: scale(1.1);
+  transition: .5s linear;
+  cursor: pointer;
+}
+
+.shop-portal-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 500px auto;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  gap: 5px;
+  padding: 20px;
+}
+
+.shop-portal-content>div {
+  /* border: dotted var(--color-gold) 1px; */
+}
+
+.shop-portal-content {
+  /* overflow-y: scroll; */
+  box-sizing: content-box;
+}
+
+.shop-portal-content::-webkit-scrollbar {}
+
+.img-grid {
+  /* min-width: 500px; */
+  padding: 1em;
+}
+
+#shop-cart-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* border: solid white; */
+}
+
+#shop-cart-item-img:hover {
+  transform: scale(1.10);
+  transition: .5s linear;
+}
+
+.order-grid {
+  padding-right: 1.5em;
+}
+
+.shop-portal-desc {
+  height: 100%;
+  position: relative;
+}
+
+.spd-product-name {
+  font-size: 28px;
+}
+
+.spd-product-name-label {
+  font-size: 14px;
+  display: block;
+  /* border: solid; */
+}
+
+.spd-product-desc {
+  margin: 1em 0;
+  font-size: 16px;
+  /* font-family: "Mr Eaves XL Modern", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+}
+
+#add-to-cart-form {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  /* width: 100%; */
+  border: solid red 1px;
+  height: 150px;
+  width: 325px;
+  align-items: flex-end;
+  padding: 0 0.5em;
+  background: #f6f6f9;
+  opacity: .9;
+}
+
+.form-group {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1em;
+}
+
+.form-group>select,
+.form-group>input {
+  height: 30px;
+  width: 60px;
+  font-size: 14px;
+}
+
+.form-group>label {
+  font-size: 14px;
+}
+
+#add-to-cart-group {}
+
+#add-to-cart-btn {
+  height: 30px;
+  width: 100px;
+  background: #32b259;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+
+#add-to-cart-group>label {
+  opacity: 0;
+}
+
+.nav-grid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-top: 10px;
+  padding: 1.5em 0;
+  margin-bottom: .5em;
+  /* border-top: dotted 1px gold;
+  border-bottom: dotted 1px gold; */
+}
+
+.nav-grid:last-child {}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-buttons>a {
+  text-align: center;
+  padding: .25em 0;
+  background: grey;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px;
+  width: 150px;
+  text-decoration: none;
+  color: var(--color-cream);
+  /* align-self: center; */
+}
+
+.nav-buttons>a:hover {
+  background: #32b259;
+  ;
+}
+
+.nav-buttons:last-child {}
+
+.related-items-grid {
+  grid-column: 1/1;
+  color: var(--color-cream);
+}
+
+#delivery-details>div,
+#return-policy>div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  opacity: .8;
+  margin-bottom: 3px;
+}
+
+#delivery-details>div>span,
+#return-policy>div>span {}
+
+#delivery-details>p,
+#return-policy>p {
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+#shipping-cost {
+  color: red;
+  background: yellow;
+}
+
+@media only screen and (max-width: 413px) {
+  .shop-portal-content {
+    grid-template-rows: 250px 500px;
+    padding: 10px;
+  }
+  #close-portal-btn {
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+  }
+  .order-grid {
+    padding-right: 0;
+  }
+  .spd-product-name {
+    font-size: 20px;
+  }
+  #add-to-cart-form {
+    width: 100%;
+  }
+  .nav-buttons>a {
+    font-size: 14px;
+    width: 125px;
+    margin: 2px;
+    border-radius: 0;
+  }
+  .related-items-grid {
+    grid-column: 1/3;
+  }
+  #delivery-details>p,
+  #return-policy>p {
+    padding-left: .5em;
+  }
+}

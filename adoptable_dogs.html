@@ -13,22 +13,10 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-wrapper">
-      <div class="header-main">
-        <div class="header-main-top">
-          <i class="fas fa-paw"></i>
-          <span class="header-text pl-2">Viva</span><img class="" id="header-logo" src="./assets/imgs/logo.png" alt="img"><span class="header-text pr-2">Perros</span>
-          <i class="fas fa-paw"></i>
-        </div>
-        <span class="header-main-bottom">Helping homeless and abused dogs get the medical care they need and help find
-          them good homes.</span>
-      </div>
-    </div>
-  </header>
+
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo">
+      <a class="navbar-brand" href="index.html#nav" id="logo">
         <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png" alt="logo_img"><span class="navbar-brand-text">Viva
             Perros</span></div>
       </a>
@@ -47,7 +35,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success_stories.html">Success Stories</a>
               <a class="dropdown-item" href="adoptable_dogs.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf" download>Download Adoption Application <i
+              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -69,12 +57,12 @@
     </div>
   </nav>
   <!-- Start of container -->
-  <div class="container container-all">
+  <div class="container container-all box-shadow container-adoptable_dogs">
     <div class="adoptable_dogs-main">
       <h1 class="block-header">Awesome Adoptable Dogs</h1>
       <hr />
-      <div class="row cards">
-        <div class="col-md-6 card-wrapper">
+      <div class="row cards" id="carta">
+        <!-- <div class="col-md-6 card-wrapper">
           <div class="card adopt-dog-card box-shadow" style="width: 100%;">
             <img src="./assets/imgs/dog1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -145,7 +133,7 @@
               <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -174,6 +162,7 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./assets/js/adoptable_dogs.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
 

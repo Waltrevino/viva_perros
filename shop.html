@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Viva Perros</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+  <link rel="stylesheet" href="assets/css/shopping_cart.css" media="screen">
 </head>
+
 <body>
-  <header class="header">
-    <div class="header-wrapper">
-      <div class="header-main">
-        <div class="header-main-top">
-          <i class="fas fa-paw"></i>
-          <span class="header-text pl-2">Viva</span><img class="" id="header-logo" src="./assets/imgs/logo.png"
-            alt="img"><span class="header-text pr-2">Perros</span>
-          <i class="fas fa-paw"></i>
-        </div>
-        <span class="header-main-bottom">Helping homeless and abused dogs get the medical care they need and help find them good homes.</span>
-      </div>
-    </div>
-  </header>
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html" id="logo"><div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png" alt="logo_img"><span class="navbar-brand-text">Viva
+      <a class="navbar-brand" href="index.html#nav" id="logo">
+        <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png" alt="logo_img"><span class="navbar-brand-text">Viva
         Perros</span></div>
-      </a>        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -40,14 +30,13 @@
             <a class="nav-link-me" href="about_viva_perros.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" href="#">
+            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success_stories.html">Success Stories</a>
               <a class="dropdown-item" href="adoptable_dogs.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf" download>Download Adoption Application   <i
+              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application   <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -60,7 +49,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link-me" href="contact.html">Contact</a>
-          </li>       
+          </li>
           <li class="nav-item">
             <a class="nav-link-me" href="adoptable_dogs.html">Adoptable Dogs</a>
           </li>
@@ -71,10 +60,95 @@
   <!-- End of navbar -->
 
   <!-- Start of container -->
-  <div class="container container-all">
+  <div class="container container-all container-shop">
     <div class="shop-main">
-        <h1 class="block-header">Shop</h1>
-        <hr />
+      <h1 class="block-header">Shop</h1>
+      <hr />
+      <div class="cartas"></div>
+      <div class="shop-portal-wrapper hide">
+        <div class="shop-portal-container">
+          <div class="shop-portal-content">
+
+            <div class="img-grid">
+              <img id="shop-cart-item-img" alt="" class="shop-portal-img">
+            </div>
+
+            <div class="order-grid">
+              <div class="shop-portal-desc">
+                <span class="spd-product-name"></span>
+                <span class="spd-product-name-label">from Viva Perros</span>
+                <div class="spd-product-desc"></div>
+                <form id="add-to-cart-form" action="" class="">
+                  <div class="form-group" id="sizes-group">
+                    <label for="sizes">Size</label>
+                    <select name="sizes" id="sizes">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">SL</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="colors-group">
+                    <label for="color">Color</label>
+                    <select name="colors" id="colors">
+                      <option value="Black">Black</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Navy">Navy</option>
+                      <option value="Red">Red</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" max="10" min="1" value="1">
+                  </div>
+                  <div class="form-group" id="add-to-cart-group">
+                    <label for="quantity">.</label>
+                    <button id="add-to-cart-btn">Add To Cart</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+            <div class="nav-grid">
+              <div class="nav-buttons">
+                <a href="" id="view-prev">
+                  &lt; View Prev Item</a>
+                <a href="" id="view-all">All Items</a>
+                <a href="" id="view-next">View Next Item &gt;</a>
+              </div>
+            </div>
+
+            <div class="related-items-grid">
+              <div id="delivery-details">
+                <div>
+                  <span>Delivery Details</span>
+                  <select name="country" id="country">
+                    <option value="US">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="International">International</option>
+                </select>
+                </div>
+                <p>All products are printed to order.</p>
+                <p>If you place your order now, it will ship on or before December 28, 2020.</p>
+                <p>Please allow additional 3 - 8 business days for standard shipping.</p>
+                <p>Expedited or Rush shipping may be available depending upon the product(s) selected and the destination country.</p>
+                <p>Shipping costs start at:<span id="shipping-cost"> $.00</span></p>
+                <p>Products are fulfilled in the US</p>
+              </div>
+              <div id="return-policy">
+                <div>
+                  <span>Return Policy</span>
+                </div>
+                <p>If you're not 100% satisfied with your physical order, let us know and we'll make it right.</p>
+                <p>Learn more about our return policy here.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="close-portal-btn">X</div>
+      </div>
     </div>
   </div>
   <!-- End of container -->
@@ -101,7 +175,15 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="./assets/js/inventory.js"></script>
+  <script src="./assets/js/shop.js"></script>
+
   <script src="./assets/js/index.js"></script>
+
 </body>
+<script>
+  console.log(inventoryO);
+</script>
 
 </html>
