@@ -9,28 +9,34 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" media="screen">
+  <link rel="stylesheet" href="./assets/css/index.css" media="screen">
+  <link rel="stylesheet" href="./assets/css/413px.css" media="screen">
 </head>
 
 <body>
   <header class="header">
     <div class="header-wrapper">
-      <div class="header-main">
-        <div class="header-main-top">
+      <div class="header-container">
+        <div class="header-container-top">
           <i class="fas fa-paw"></i>
           <span class="header-text pl-2"><span class="txt-rotate" data-period="8000" data-rotate='["Viva"]'></span></span><img class="" id="header-logo" src="./assets/imgs/logo.png" alt="img"><span class="header-text pr-2"><span class="txt-rotate" data-period="4000" data-rotate='["Perros"]'></span></span>
           <i class="fas fa-paw"></i>
         </div>
-        <span class="header-main-bottom">Helping homeless and abused dogs get the medical care they need and help find them good homes.</span>
+        <span class="header-container-bottom">Helping homeless and abused dogs get the medical care they need and help find them good homes.</span>
       </div>
     </div>
   </header>
-
-  <div class="fixed-logo-wrapper">
+  <div class="fixed-logo-wrapper bottom-left">
     <div class="fixed-logo-container">
       <img src="./assets/imgs/logo.png" alt="logo">
     </div>
   </div>
-
+  <div class="fixed-logo-wrapper bottom-right">
+    <div class="fixed-logo-container">
+      <img src="./assets/imgs/logo.png" alt="logo">
+    </div>
+  </div>
   <nav class="navbar sticky-top navbar-expand-lg box-shadow" id="nav">
     <div class="container">
       <a class="navbar-brand" href="index.html#nav" id="logo">
@@ -43,15 +49,15 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link-me" href="about_viva_perros.html">About</a>
+            <a class="nav-link-me" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="success_stories.html">Success Stories</a>
-              <a class="dropdown-item" href="adoptable_dogs.html">Meet Our Adoptable Dogs</a>
+              <a class="dropdown-item" href="success.html">Success Stories</a>
+              <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
               <a class="dropdown-item" target="_blank" href="./assets/docs/Application.pdf">Download Adoption Application   <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
@@ -67,7 +73,7 @@
             <a class="nav-link-me" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-me" href="adoptable_dogs.html">Adoptable Dogs</a>
+            <a class="nav-link-me" href="adopt.html">Adoptable Dogs</a>
           </li>
         </ul>
       </div>
@@ -88,21 +94,21 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img id="" src="./assets/imgs/lupe_figurines.jpg" class="d-block w-100" alt="...">
+                <img id="" src="./assets/imgs/lupe_figurines.jpg" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/imgs/stella_guster.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imgs/stella_guster.jpg" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/imgs/trixi_catherine.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imgs/trixi_catherine.jpg" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -135,11 +141,11 @@
       </div>
     </div>
     <div class="divider-index"></div>
-    <div class="row dashboard-wrapper box-shadow">
+    <!-- <div class="row dashboard-wrapper box-shadow">
       <div class="col-md-4">
         <div class="dashboard-wrapper-buttons dashboard-wrapper-buttons-left">
-          <a class="dashboard-button" href="about_viva_perros.html">About Viva Perros</a>
-          <a class="dashboard-button" href="adoptable_dogs.html">Adopt</a>
+          <a class="dashboard-button" href="about.html">About Viva Perros</a>
+          <a class="dashboard-button" href="adopt.html">Adopt</a>
           <a class="dashboard-button" href="#">Foster</a>
         </div>
       </div>
@@ -147,7 +153,7 @@
         <div class="dashboard-wrapper-buttons dashboard-wrapper-buttons-center">
           <a class="dashboard-button" href="shop.html">Shop</a>
           <a class="dashboard-button" href="donate.html">Donate</a>
-          <a class="dashboard-button" href="success_stories.html">Success Stories</a>
+          <a class="dashboard-button" href="success.html">Success Stories</a>
         </div>
       </div>
       <div class="col-md-4">
@@ -157,7 +163,21 @@
           <a class="dashboard-button" href="faq.html">Frequently Asked Questions</a>
         </div>
       </div>
+    </div> -->
+    <div class="row dashboard-wrapper box-shadow">
+      <div class="dashboard-container">
+        <a class="dashboard-button" href="about.html">About Viva Perros</a>
+        <a class="dashboard-button" href="adopt.html">Adopt</a>
+        <a class="dashboard-button" href="#">Foster</a>
+        <a class="dashboard-button" href="shop.html">Shop</a>
+        <a class="dashboard-button" href="donate.html">Donate</a>
+        <a class="dashboard-button" href="success.html">Success Stories</a>
+        <a class="dashboard-button" href="contact.html">Contact Us</a>
+        <a class="dashboard-button" href="./assets/docs/Application.pdf">View Adoption Application</a>
+        <a class="dashboard-button" href="faq.html">Frequently Asked Questions</a>
+      </div>
     </div>
+  </div>
   </div>
 
   <!-- End of container -->
@@ -165,7 +185,7 @@
   <!-- Start of footer -->
   <footer class="footer" id="zfooter">
     <div class="footer-wrapper">
-      <div class="footer-main">
+      <div class="footer-container">
         <div>
           <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
         </div>
@@ -184,7 +204,6 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/styles.css" media="screen">
   <script type="" src="./assets/js/index.js"></script>
 </body>
 

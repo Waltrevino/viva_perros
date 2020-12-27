@@ -1,0 +1,42 @@
+.container-adopt,
+.container-success {
+  background: transparent;
+}
+
+.cards {
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+}
+
+.card-title {
+  color: tomato;
+  font-weight: bold;
+}
+
+.card-wrapper {
+  padding-left: 0px;
+  padding-bottom: 1em;
+}
+
+.adopt-dog-card {
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 6px 6px 8px rgba(83, 33, 5, .8); */
+}
+
+.adopt-dog-img {
+  height: auto;
+}
+
+.card-body {
+  display: inline-block;
+  width: 75%;
+  position: relative;
+  top: -3rem;
+  margin: 0 auto;
+  background-color: #ffa;
+  padding: 1em;
+  opacity: .80;
+}

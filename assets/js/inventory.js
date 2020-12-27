@@ -5,7 +5,8 @@ const inventoryO = [{
     product_img: "./assets/imgs/ruta_maya_cd_cover.jpg",
     product_desc: [
       "Produced by Joe King Carrasco, known for his revved-up Tex-Mex brand of rock n roll, has been a long time supporter and lover of dogs. Viva Perros is his way of taking some of the profits from his music and putting it into the hands of non-profit rescue groups that work relentlessly to improve the lives of dogs around the world.",
-      "Part of the profits go to supporting Viva Perros."
+      "Part of the profits go to supporting Viva Perros.",
+      "Produced by Joe King Carrasco, known for his revved-up Tex-Mex brand of rock n roll, has been a long time supporter and lover of dogs. Viva Perros is his way of taking some of the profits from his music and putting it into the hands of non-profit rescue groups that work relentlessly to improve the lives of dogs around the world.",
     ],
     quantity: 5,
     type: "cd",

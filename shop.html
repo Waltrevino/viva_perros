@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-  <link rel="stylesheet" href="assets/css/shopping_cart.css" media="screen">
+  <link rel="stylesheet" href="assets/css/shop_cart.css" media="screen">
+  <link rel="stylesheet" href="assets/css/shop.css" media="screen">
+  <link rel="stylesheet" href="assets/css/413px.css" media="screen">
 </head>
 
 <body>
@@ -27,15 +29,15 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link-me" href="about_viva_perros.html">About</a>
+            <a class="nav-link-me" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="success_stories.html">Success Stories</a>
-              <a class="dropdown-item" href="adoptable_dogs.html">Meet Our Adoptable Dogs</a>
+              <a class="dropdown-item" href="success.html">Success Stories</a>
+              <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
               <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application   <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
@@ -51,7 +53,7 @@
             <a class="nav-link-me" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-me" href="adoptable_dogs.html">Adoptable Dogs</a>
+            <a class="nav-link-me" href="adopt.html">Adoptable Dogs</a>
           </li>
         </ul>
       </div>
@@ -62,9 +64,9 @@
   <!-- Start of container -->
   <div class="container container-all container-shop">
     <div class="shop-main">
-      <h1 class="block-header">Shop</h1>
+      <h1 class="page-header">Shop</h1>
       <hr />
-      <div class="cartas"></div>
+      <div class="shopping-cards-container"></div>
       <div class="shop-portal-wrapper hide">
         <div class="shop-portal-container">
           <div class="shop-portal-content">
@@ -77,7 +79,9 @@
               <div class="shop-portal-desc">
                 <span class="spd-product-name"></span>
                 <span class="spd-product-name-label">from Viva Perros</span>
-                <div class="spd-product-desc"></div>
+                <div class="product-desc-wrapper">
+                  <div class="spd-product-desc"></div>
+                </div>
                 <form id="add-to-cart-form" action="" class="">
                   <div class="form-group" id="sizes-group">
                     <label for="sizes">Size</label>
@@ -102,8 +106,9 @@
                     <input type="number" id="quantity" max="10" min="1" value="1">
                   </div>
                   <div class="form-group" id="add-to-cart-group">
-                    <label for="quantity">.</label>
-                    <button id="add-to-cart-btn">Add To Cart</button>
+                    <!-- <label for="quantity">.</label>
+                    <button id="add-to-cart-btn">Add To Cart</button> -->
+                    <input id="add-to-cart-btn" type="submit" value="Add To Cart">
                   </div>
                 </form>
 
@@ -156,7 +161,7 @@
   <!-- Start of footer -->
   <footer class="footer">
     <div class="footer-wrapper">
-      <div class="footer-main">
+      <div class="footer-container">
         <div>
           <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
         </div>
@@ -178,7 +183,6 @@
 
   <script src="./assets/js/inventory.js"></script>
   <script src="./assets/js/shop.js"></script>
-
   <script src="./assets/js/index.js"></script>
 
 </body>

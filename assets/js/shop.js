@@ -14,14 +14,14 @@ $(document).ready(function() {
       minimumFractionDigits: 0
     });
 
-    const cards = document.querySelector(".cartas");
+    const cards = document.querySelector(".shopping-cards-container");
 
     var itemCard =
-      `<div class="item-carta box-shadow" data-id=${i} id=${i}     product-id=${inventory[i].product_id}>
-        <a class="item" href="#"><img class="carta__image" src=${inventory[i].  product_img}></a>  
-        <div class="carta__content">
-          <p class="product_title"><a class="item" href="#">${inventory[i].product_name}</a></p>
-          <p class="product_price"><a class="item" href="#">${formatter.format(inventory[i].product_price)}</a></p>
+      `<div class="shopping-item-card box-shadow" data-id=${i} id=${i}     product-id=${inventory[i].product_id}>
+        <a class="item" href="#"><img class="shopping-card-image" src=${inventory[i].  product_img}></a>  
+        <div class="shopping-card-content">
+          <p class="product-title"><a class="item" href="#">${inventory[i].product_name}</a></p>
+          <p class="product-price"><a class="item" href="#">${formatter.format(inventory[i].product_price)}</a></p>
         </div>     
       </div>`
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
   var shoppingProdNameLabel = $(".spd-product-name-label");
   var shoppingProdDesc = $(".spd-product-desc");
 
-  $(".item-carta").on("click", function() {
+  $(".shopping-item-card").on("click", function() {
     var itemIndex = 0;
     itemIndex = inventoryUnsorted.findIndex(item => item.product_id == $(this).attr("product-id"));
     shopPortalWrapper.classList.add("shop-portal-wrapper-show");

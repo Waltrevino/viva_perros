@@ -1,0 +1,75 @@
+.about-wrapper {
+  padding-bottom: 6em;
+}
+
+.about-main>p {
+  text-align: justify;
+}
+
+#about-image {
+  float: left;
+  width: 300px;
+  margin: 0 1em 1em 0;
+}
+
+.help-raise-wrapper {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.help-raise-container {
+  box-shadow: inset 0 0 15px rgba(83, 33, 5, .8);
+  outline: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.help-raise-container> :nth-child(4) {
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+.video-card {
+  margin-top: 7.5px;
+  padding-left: 15px;
+}
+
+.video-player-wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.video-player-main {
+  position: relative;
+  width: 100%;
+  height: 0;
+  /* padding-bottom: 56.25%; */
+  padding-top: calc(9 / 16 * 100%);
+}
+
+.video-player-main iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.video-title {
+  font-weight: bold;
+  color: #4aaaa5;
+  font-size: 20px;
+}
+
+.video-author {
+  display: block;
+  font-size: 14px;
+  padding-top: .25em;
+  padding-bottom: 1em;
+  color: tomato;
+}
+
+.dog-desc-main>p {
+  text-align: justify;
+}

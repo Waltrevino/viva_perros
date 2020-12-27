@@ -1,0 +1,47 @@
+.success-dog-card {
+  background: yellow;
+  margin-bottom: 1em;
+}
+
+.success-card-container,
+.success-card-container>.img-wrapper {
+  padding: 0;
+}
+
+.success-dog-card>.dog-desc {
+  padding-top: .5em;
+}
+
+.img-wrapper {
+  width: 100%;
+  padding: 1em;
+}
+
+.success-dog-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.success-card-container,
+.success-card-container>.img-wrapper {
+  padding: 0;
+}
+
+.dog-name {
+  font-weight: bold;
+  color: #4aaaa5;
+  font-size: 20px;
+}
+
+.adoption-date {
+  display: block;
+  font-size: 14px;
+  padding-top: .25em;
+  padding-bottom: 1em;
+  color: tomato;
+}
+
+.dog-desc-main>p {
+  text-align: justify;
+}
