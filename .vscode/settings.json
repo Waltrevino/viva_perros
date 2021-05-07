@@ -48,5 +48,6 @@
             "italic": false
         }
     ],
-    "editor.foldingStrategy": "indentation"
+    "editor.foldingStrategy": "indentation",
+    "liveServer.settings.port": 5501
 }

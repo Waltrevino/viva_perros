@@ -7,9 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Viva Perros</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   <link rel="stylesheet" href="assets/css/shop_cart.css" media="screen">
   <link rel="stylesheet" href="assets/css/shop.css" media="screen">
@@ -20,10 +27,20 @@
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html#nav" id="logo">
-        <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png" alt="logo_img"><span class="navbar-brand-text">Viva
-        Perros</span></div>
+        <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png"
+            alt="logo_img"><span class="navbar-brand-text">Viva
+            Perros</span></div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <i class="fas fa-shopping-cart" style="border: solid red; font-size: 1.8em;"><span></span>(7) <i class="fa" style="font-size:24px">&#xf07a;</i></span></i> -->
+      <div id="cart-alert-wrapper"><div style="position: absolute; bottom: 0px;">
+        <!-- <i class="fa fa-cart" style="font-size:32px;color: brown" data-toggle="modal" data-target="#cart">&#xf07a;</i> -->
+        <!-- <i class="fa fa-cart" style="font-size:32px;color: brown" data-toggle="modal" data-target="#cart">&#xf07a;</i> -->
+        <i class="fas fa-shopping-basket fa-cart" style="font-size:30px;color: brown;" data-toggle="modal" data-target="#cart"></i>
+        <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+      </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -32,13 +49,14 @@
             <a class="nav-link-me" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success.html">Success Stories</a>
               <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application   <i
+              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -63,18 +81,32 @@
 
   <!-- Start of container -->
   <div class="container container-all container-shop">
+
     <div class="shop-main">
       <h1 class="page-header">Shop</h1>
       <hr />
       <div class="shopping-cards-container"></div>
+
       <div class="shop-portal-wrapper hide">
         <div class="shop-portal-container">
+
+          <div class="cart-buttons-grid">
+            <button id="cart-btn" type="button" data-toggle="modal" data-target="#cart">Cart (<span class="total-count">0</span>)</button>
+            <button id="clear-cart-btn">Clear Cart</button>
+          </div>
           <div class="shop-portal-content">
 
+            <!-- <div class="cart-buttons-grid">
+              <button id="cart-btn">Cart</button>
+              <button id="clear-cart-btn">Clear Cart</button>
+            </div> -->
+
+            <!-- PICTURE OF ITEM -->
             <div class="img-grid">
               <img id="shop-cart-item-img" alt="" class="shop-portal-img">
             </div>
 
+            <!-- DESCRIPTION AND ORDER -->
             <div class="order-grid">
               <div class="shop-portal-desc">
                 <span class="spd-product-name"></span>
@@ -83,8 +115,11 @@
                   <div class="spd-product-desc"></div>
                 </div>
                 <form id="add-to-cart-form" action="" class="">
+                  <!-- <div class="zform-group" id="paypal-test">
+                    dsdfsdfsdfsdfsdfsdfsd
+                  </div> -->
                   <div class="form-group" id="sizes-group">
-                    <label for="sizes">Size</label>
+                    <label for="sizes">-- Select Size --</label>
                     <select name="sizes" id="sizes">
                       <option value="S">S</option>
                       <option value="M">M</option>
@@ -93,7 +128,7 @@
                     </select>
                   </div>
                   <div class="form-group" id="colors-group">
-                    <label for="color">Color</label>
+                    <label for="color">-- Select Color --</label>
                     <select name="colors" id="colors">
                       <option value="Black">Black</option>
                       <option value="Blue">Blue</option>
@@ -101,20 +136,22 @@
                       <option value="Red">Red</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" id="quantity" max="10" min="1" value="1">
-                  </div>
+
                   <div class="form-group" id="add-to-cart-group">
-                    <!-- <label for="quantity">.</label>
-                    <button id="add-to-cart-btn">Add To Cart</button> -->
-                    <input id="add-to-cart-btn" type="submit" value="Add To Cart">
+                    <label for="quantity"></label>
+                    <input type="number" id="quantity" max="10" min="1" value="1" placeholder="Quantity">
+                 
+                 
+                    <input id="add-to-cart-btn" data-name="" data-price="" type="submit" value="Add To Cart">
+                 
+           
+                    <input id="checkout-finish" data-name="" data-price="" type="submit" value="Checkout">
                   </div>
                 </form>
-
               </div>
             </div>
 
+            <!-- NAVIGATE -->
             <div class="nav-grid">
               <div class="nav-buttons">
                 <a href="" id="view-prev">
@@ -124,6 +161,7 @@
               </div>
             </div>
 
+            <!--  -->
             <div class="related-items-grid">
               <div id="delivery-details">
                 <div>
@@ -132,12 +170,13 @@
                     <option value="US">United States</option>
                     <option value="Canada">Canada</option>
                     <option value="International">International</option>
-                </select>
+                  </select>
                 </div>
                 <p>All products are printed to order.</p>
                 <p>If you place your order now, it will ship on or before December 28, 2020.</p>
                 <p>Please allow additional 3 - 8 business days for standard shipping.</p>
-                <p>Expedited or Rush shipping may be available depending upon the product(s) selected and the destination country.</p>
+                <p>Expedited or Rush shipping may be available depending upon the product(s) selected and the
+                  destination country.</p>
                 <p>Shipping costs start at:<span id="shipping-cost"> $.00</span></p>
                 <p>Products are fulfilled in the US</p>
               </div>
@@ -149,27 +188,72 @@
                 <p>Learn more about our return policy here.</p>
               </div>
             </div>
+
+            <div class="paypal-grid">
+
+            </div>
+
           </div>
 
         </div>
-        <div id="close-portal-btn">X</div>
-      </div>
+        
+        <div id="close-portal-btn">X</div></div>
     </div>
   </div>
   <!-- End of container -->
+ <!-- SHOPPING CART MODAL -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          <!-- CART HERE CART HERE CART HERE CART HERE CART HERE -->
+        </table>
+        <!-- <div>Total price: $<span class="total-cart">0</span></div> -->
+      </div>
+      <div class="modal-footer">
+        <!-- PAYPAL TESTING AREA -->
+        <div class="paypal-pay">
+          <!-- Set up a container element for the button -->
+          <div id="paypal-button-container">Order Now</div>
+          <span id="totalAmountTotalAmount" type="number"></span>
 
+          <!-- Include the PayPal JavaScript SDK -->
+          <script src="https://www.paypal.com/sdk/js?client-id=AcnI1IfekT7sW--clje0cWr72F1yATE0DrVPuza5Xv57cIy01ixj5wj6YY67IYfZxoQWbrg64_M-9HeF&currency=USD"></script>
+          <script>
+          
+
+          </script>
+
+        </div>
+        <div style="" id="close-cart-btn">
+        <button type="button" class="btn btn-secondary" id="" data-dismiss="modal">Close</button>            
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</div> 
   <!-- Start of footer -->
   <footer class="footer">
     <div class="footer-wrapper">
       <div class="footer-container">
         <div>
-          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
+          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i
+            class="fas fa-paw footer-paw"></i>
         </div>
         <p class="text-muted">
           &copy; Copyright 2020
         </p>
         <ul class="footer-contact-social">
-          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i
+                class="fab fa-facebook"></i></a></li>
           <li><a href=""><i class="fab fa-instagram"></i></a></li>
           <li><a href=""><i class="fas fa-envelope"></i></a></li>
         </ul>
@@ -183,11 +267,11 @@
 
   <script src="./assets/js/inventory.js"></script>
   <script src="./assets/js/shop.js"></script>
+  <script src="./assets/js/shop_cart.js"></script>
   <script src="./assets/js/index.js"></script>
-
 </body>
 <script>
-  console.log(inventoryO);
+  
 </script>
 
 </html>

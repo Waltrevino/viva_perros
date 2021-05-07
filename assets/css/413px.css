@@ -234,12 +234,12 @@
             .product-desc-wrapper {
               height: 215px;
               overflow: scroll;
-              border: blue solid 2px;
+              /* border: blue solid 2px; */
               margin-bottom: 0;
             }
             .product-desc-wrapper>p:last-of-type {
               margin-bottom: 0;
-              border: solid red;
+              /* border: solid red; */
             }
             .spd-product-name {
               font-size: 20px;

@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb:hover {
 .shop-portal-container::-webkit-scrollbar-thumb {
   background: var(--color-gold);
   border-radius: 25px;
-  height: 100px;
+  /* height: 100px; */
 }
 
 .shop-portal-container::-webkit-scrollbar-thumb:hover {
@@ -126,7 +126,7 @@ h5 {}
 
 .header-container-bottom {
   font-weight: bolder;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-family: consolas;
   letter-spacing: 0.125ch;
 }
@@ -146,13 +146,16 @@ h5 {}
   height: 300px;
 }
 
+/* NAV */
 nav {
   border-bottom: solid .25px var(--color-brown);
-  background-color: var(--color-cream)
+  background-color: var(--color-cream);
+
 }
 
 .navbar {
-  padding: 0;
+  padding: 0;  
+  
 }
 
 #navbar-logo-img {
@@ -163,11 +166,13 @@ nav {
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
+  /* border: solid blue 4px; */
 }
 
 .navbar-brand-main {
   display: flex;
   align-items: center;
+  /* border: solid red 2px; */
 }
 
 .navbar-brand-text {
@@ -181,20 +186,38 @@ nav {
   padding-left: 4px;
 }
 
+.navbar-menu {
+
+}
+
 .dropdown-menu {
   background-color: var(--color-cream);
 }
 
+.navbar-nav {
+
+
+ 
+}
+
 .nav-link-me {
   padding: .5rem .5rem;
+  
+}
+
+.nav-item {
+ 
 }
 
 .nav-item>.nav-link-me {
-  background-color: transparent;
+  /* background-color: yellow; */
+  margin-top: 0;
   color: rgba(0, 0, 0, .5);
   display: block;
   text-decoration: none;
 }
+
+
 
 .nav-item a.active {
   background-color: rgb(83, 33, 5);
@@ -220,8 +243,9 @@ nav {
 .container-all {
   position: relative;
   min-height: 100vh;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
   padding-bottom: 5em;
+  /* border: solid red 5px; */
 }
 
 .container-index {
@@ -232,17 +256,18 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  /* height: 150px; */
 }
 
 .footer-wrapper {
   /* Use hover effects for social media links;
   // look at https://wpdatatables.com/css-image-hover-effects/
   // it has great examaples */
-  height: 150px;
+  height: 250px;
   background-color: rgb(83, 33, 5);
   padding: 1em;
   opacity: .8;
+  
 }
 
 .footer-container {
@@ -251,6 +276,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: solid white 1px;
 }
 
 .footer-paw {
@@ -268,6 +294,7 @@ nav {
 .text-muted {
   margin-bottom: 0;
   font-size: .5em;
+  font-weight: bolder;
 }
 
 .footer-contact-social {
@@ -277,6 +304,7 @@ nav {
   margin-bottom: 0;
   padding-top: .5em;
   list-style-type: none;
+  /* border: solid blue 1px; */
 }
 
 .fixed-logo-wrapper {
@@ -295,12 +323,14 @@ nav {
   left: 2em;
   bottom: 2em;
   animation: mySpiner 5s infinite linear;
+  /* border: solid red; */
 }
 
 .bottom-right {
   right: 2em;
   bottom: 2em;
   /* transform: rotateY(180deg); */
+  
   animation: mySpinerRight 5s infinite linear;
 }
 
@@ -312,8 +342,8 @@ nav {
   from {
     transform: rotateY(0deg);
   }
-  /* 25% {
-    transform: rotate(-45deg);
+  /* 50% {
+    transform: rotate(-90deg);
   } */
   to {
     transform: rotateY(360deg);
@@ -334,12 +364,14 @@ nav {
   /* transition-duration: 5s; */
   transition: 1s linear;
   cursor: pointer;
+  /* border: solid blue; */
 }
 
 .fixed-logo-container {
   width: 100%;
   height: 100%;
   position: relative;
+  /* border: solid white; */
 }
 
 .fixed-logo-container::after {
@@ -355,7 +387,7 @@ nav {
 
 .fixed-logo-container>img {
   width: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
   height: 100%;
 }
 
