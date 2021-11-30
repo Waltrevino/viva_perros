@@ -148,6 +148,7 @@
     "colors sizes"
     "button button";
   justify-content: space-evenly;
+  color: var(--color-cream);
 }
 
 .colors, .sizes {
