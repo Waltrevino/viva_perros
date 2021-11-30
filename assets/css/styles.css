@@ -128,16 +128,18 @@ h5 {}
 
 .header-container-bottom {
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: consolas;
   letter-spacing: 0.125ch;
   text-align: center;
   padding-top: 2em;
 }
 
+.header-text {}
+
 .header-text,
 #txt-rotate {
-  color: rgb(83, 33, 5);
+  /* color: rgb(83, 33, 5); */
   font-size: 12em;
   font-family: consolas;
   padding-bottom: 0;
@@ -317,7 +319,6 @@ li {
   height: 150px;
   z-index: 1000;
   transition: 1s linear;
-  border: dotted 1px #FDF9D8;
   border-radius: 100%;
   padding: 0px;
 
