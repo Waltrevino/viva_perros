@@ -19,18 +19,22 @@
   }
 
   .header-text {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
   
   .header-container-bottom {
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
   }
+  .dashboard-wrapper  {}
 
-  .dashboard-wrapper {}
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .dashboard-button {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   footer {}
