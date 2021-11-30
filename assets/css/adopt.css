@@ -1,12 +1,13 @@
-.container-adopt,
-.container-success {
-  background: transparent;
+.adopt-container {
+ 
 }
 
-.cards {
+.adoptable-dogs-container {
   display: flex;
   justify-content: left;
   padding-left: 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .card-title {
@@ -22,8 +23,6 @@
 .adopt-dog-card {
   display: flex;
   justify-content: center;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  /* box-shadow: 6px 6px 8px rgba(83, 33, 5, .8); */
 }
 
 .adopt-dog-img {

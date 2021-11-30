@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   <link rel="stylesheet" href="assets/css/adopt.css" media="screen">
+  <link rel="stylesheet" href="assets/css/413px.css" media="screen">
 </head>
 
 <body>
-
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html#nav" id="logo">
@@ -30,13 +30,18 @@
             <a class="nav-link-me" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success.html">Success Stories</a>
               <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application <i
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_adoption_application.pdf">Download Adoption Application <i
+                  class="fas fa-file-download"></i></a>
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_pet_adoption_agreement.pdf">Download Pet Adoption Agreement <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -57,109 +62,20 @@
       </div>
     </div>
   </nav>
+  
   <!-- Start of container -->
-  <div class="container container-all container-adopt">
+  <div class="container-all adopt-container">
     <div class="adopt-main">
       <h1 class="page-header">Awesome Adoptable Dogs</h1>
       <hr />
-      <div class="row cards" id="carta">
-        <!-- <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 card-wrapper">
-          <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-            <img src="./assets/imgs/dog8.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Marty</h5>
-              <p class="card-text text-center">Loyal, friendly, eccentric, best friend.</p>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      <div class="row adoptable-dogs-container" id="carta"></div>
     </div>
   </div>
   <!-- End of container -->
 
   <!-- Start of footer -->
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer-container">
-        <div>
-          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
-        </div>
-        <p class="text-muted">
-          &copy; Copyright 2020
-        </p>
-        <ul class="footer-contact-social">
-          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i
-                class="fab fa-facebook"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-          <li><a href=""><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- End of footer -->
+  <footer id="footer"></footer>
+
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

@@ -1,0 +1,13 @@
+#donate-button-container {
+    height: 50vh;
+}
+
+#donate-button  {
+    display: flex;
+   justify-content: center;
+} 
+
+#donate-button > img {
+    display: inline-block;
+    transform: scale(2);
+}

@@ -12,10 +12,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   <link rel="stylesheet" href="assets/css/shop_cart.css" media="screen">
@@ -29,16 +36,17 @@
       <a class="navbar-brand" href="index.html#nav" id="logo">
         <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png"
             alt="logo_img"><span class="navbar-brand-text">Viva
-            Perros</span></div>
+            Perros</span>
+          <div id="header-shopping-cart">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted"
+              value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">              <input class="header-shopping-cart-img" style="" type="image" src="./assets/imgs/cart-img.png" border="0" name="submit">
+            </form>
+          </div>
+        </div>
       </a>
-      <!-- <i class="fas fa-shopping-cart" style="border: solid red; font-size: 1.8em;"><span></span>(7) <i class="fa" style="font-size:24px">&#xf07a;</i></span></i> -->
-      <div id="cart-alert-wrapper"><div style="position: absolute; bottom: 0px;">
-        <!-- <i class="fa fa-cart" style="font-size:32px;color: brown" data-toggle="modal" data-target="#cart">&#xf07a;</i> -->
-        <!-- <i class="fa fa-cart" style="font-size:32px;color: brown" data-toggle="modal" data-target="#cart">&#xf07a;</i> -->
-        <i class="fas fa-shopping-basket fa-cart" style="font-size:30px;color: brown;" data-toggle="modal" data-target="#cart"></i>
-        <span class='badge badge-warning' id='lblCartCount'> 5 </span>
-      </div>
-      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -56,7 +64,11 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success.html">Success Stories</a>
               <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application <i
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_adoption_application.pdf">Download Adoption Application <i
+                  class="fas fa-file-download"></i></a>
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_pet_adoption_agreement.pdf">Download Pet Adoption Agreement <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -80,198 +92,392 @@
   <!-- End of navbar -->
 
   <!-- Start of container -->
-  <div class="container container-all container-shop">
-
+  <div class="container-all shop-container">
     <div class="shop-main">
       <h1 class="page-header">Shop</h1>
       <hr />
-      <div class="shopping-cards-container"></div>
+      <div class="shopping-cards-container">
+        
+        <!-- Shopping Item - JOE KINK CARRASCO - EN LA RUTA MAYA-->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/jkc_en_la_ruta_maya.jpg'>
+          </a>
 
-      <div class="shop-portal-wrapper hide">
-        <div class="shop-portal-container">
-
-          <div class="cart-buttons-grid">
-            <button id="cart-btn" type="button" data-toggle="modal" data-target="#cart">Cart (<span class="total-count">0</span>)</button>
-            <button id="clear-cart-btn">Clear Cart</button>
-          </div>
-          <div class="shop-portal-content">
-
-            <!-- <div class="cart-buttons-grid">
-              <button id="cart-btn">Cart</button>
-              <button id="clear-cart-btn">Clear Cart</button>
-            </div> -->
-
-            <!-- PICTURE OF ITEM -->
-            <div class="img-grid">
-              <img id="shop-cart-item-img" alt="" class="shop-portal-img">
-            </div>
-
-            <!-- DESCRIPTION AND ORDER -->
-            <div class="order-grid">
-              <div class="shop-portal-desc">
-                <span class="spd-product-name"></span>
-                <span class="spd-product-name-label">from Viva Perros</span>
-                <div class="product-desc-wrapper">
-                  <div class="spd-product-desc"></div>
-                </div>
-                <form id="add-to-cart-form" action="" class="">
-                  <!-- <div class="zform-group" id="paypal-test">
-                    dsdfsdfsdfsdfsdfsdfsd
-                  </div> -->
-                  <div class="form-group" id="sizes-group">
-                    <label for="sizes">-- Select Size --</label>
-                    <select name="sizes" id="sizes">
-                      <option value="S">S</option>
-                      <option value="M">M</option>
-                      <option value="L">L</option>
-                      <option value="XL">SL</option>
-                    </select>
-                  </div>
-                  <div class="form-group" id="colors-group">
-                    <label for="color">-- Select Color --</label>
-                    <select name="colors" id="colors">
-                      <option value="Black">Black</option>
-                      <option value="Blue">Blue</option>
-                      <option value="Navy">Navy</option>
-                      <option value="Red">Red</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group" id="add-to-cart-group">
-                    <label for="quantity"></label>
-                    <input type="number" id="quantity" max="10" min="1" value="1" placeholder="Quantity">
-                 
-                 
-                    <input id="add-to-cart-btn" data-name="" data-price="" type="submit" value="Add To Cart">
-                 
-           
-                    <input id="checkout-finish" data-name="" data-price="" type="submit" value="Checkout">
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <!-- NAVIGATE -->
-            <div class="nav-grid">
-              <div class="nav-buttons">
-                <a href="" id="view-prev">
-                  &lt; View Prev Item</a>
-                <a href="" id="view-all">All Items</a>
-                <a href="" id="view-next">View Next Item &gt;</a>
-              </div>
-            </div>
-
-            <!--  -->
-            <div class="related-items-grid">
-              <div id="delivery-details">
-                <div>
-                  <span>Delivery Details</span>
-                  <select name="country" id="country">
-                    <option value="US">United States</option>
-                    <option value="Canada">Canada</option>
-                    <option value="International">International</option>
-                  </select>
-                </div>
-                <p>All products are printed to order.</p>
-                <p>If you place your order now, it will ship on or before December 28, 2020.</p>
-                <p>Please allow additional 3 - 8 business days for standard shipping.</p>
-                <p>Expedited or Rush shipping may be available depending upon the product(s) selected and the
-                  destination country.</p>
-                <p>Shipping costs start at:<span id="shipping-cost"> $.00</span></p>
-                <p>Products are fulfilled in the US</p>
-              </div>
-              <div id="return-policy">
-                <div>
-                  <span>Return Policy</span>
-                </div>
-                <p>If you're not 100% satisfied with your physical order, let us know and we'll make it right.</p>
-                <p>Learn more about our return policy here.</p>
-              </div>
-            </div>
-
-            <div class="paypal-grid">
-
-            </div>
-
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Joe King Carrasco - En La Ruta May</a></p>
+            <p class="product-price"><a class="item" href="#">$ 12</a></p>
           </div>
 
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="PKF79DBVPY4C6">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>   
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - JOE KINK CARRASCO - CD CONCIERTO PARA LOS PERROS -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/jkc_concierto_para_los_perros.jpg'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Joe King Carrasco - Concierto Para Los Perros</a></p>
+            <p class="product-price"><a class="item" href="#">$ 12</a></p>
+          </div>
+
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="XNQRQCU489XEQ">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>    
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - NEW VIVA PERROS T-SHIRT - Marty Tribute T-Shirt - Mens -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_men.jpg'>
+          </a>      
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Marty Tribute T-Shirt - Mens</a></p>
+            <p class="product-price"><a class="item" href="#">$ 20</a></p>
+          </div>     
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <!-- UPDATE VALUE -->
+                <input type="hidden" name="hosted_button_id" value="BWBJEGCVTGEUS">
+                <input type="hidden" name="on0" value="Color">Color
+                <select name="os0">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="White">White </option>
+                  <option value="Black">Black </option>
+                  <option value="Grey">Grey </option>
+                  <option value="Blue">Blue </option>
+                  <option value="Red">Red </option>
+                </select>
+              </div>
+              <div class="sizes"><input type="hidden" name="on1" value="Size">Size
+                <select name="os1">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="S">S </option>
+                  <option value="M">M </option>
+                  <option value="L">L </option>
+                  <option value="XL">XL </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select>
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>       
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - Marty Tribute T-Shirt - Womens -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_women.jpg'>
+          </a>      
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Marty Tribute T-Shirt - Womens</a></p>
+            <p class="product-price"><a class="item" href="#">$ 20</a></p>
+          </div>     
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <!-- UPDATE VALUE -->
+                <input type="hidden" name="hosted_button_id" value="S6CMQZ9CVYY42">
+                <input type="hidden" name="on0" value="Color">Color
+                <select name="os0">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="White">White </option>
+                  <option value="Black">Black </option>
+                  <option value="Grey">Grey </option>
+                  <option value="Blue">Blue </option>
+                  <option value="Red">Red </option>
+                </select>
+              </div>
+              <div class="sizes"><input type="hidden" name="on1" value="Size">Size
+                <select name="os1">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="S">S </option>
+                  <option value="M">M </option>
+                  <option value="L">L </option>
+                  <option value="XL">XL </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select>
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>       
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - New Viva Perros T-Shirt -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/new_viva_perros_shirt.jpg'>
+          </a>      
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">New Viva Perros T-Shirt</a></p>
+            <p class="product-price"><a class="item" href="#">$ 20</a></p>
+          </div>     
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <!-- UPDATE VALUE -->
+                <input type="hidden" name="hosted_button_id" value="PPADQWGCAXVJY">
+                <input type="hidden" name="on0" value="Color">Color
+                <select name="os0">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="White">White </option>
+                  <option value="Black">Black </option>
+                  <option value="Grey">Grey </option>
+                  <option value="Blue">Blue </option>
+                  <option value="Red">Red </option>
+                </select>
+              </div>
+              <div class="sizes"><input type="hidden" name="on1" value="Size">Size
+                <select name="os1">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="S">S </option>
+                  <option value="M">M </option>
+                  <option value="L">L </option>
+                  <option value="XL">XL </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select>
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>       
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - Viva Perros Tribute T-Shirt -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/viva_perros_tribute_shirt.jpg'>
+          </a>      
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Viva Perros Tribute T-Shirt</a></p>
+            <p class="product-price"><a class="item" href="#">$ 20</a></p>
+          </div>     
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <!-- UPDATE VALUE -->
+                <input type="hidden" name="hosted_button_id" value="8FTUPGAUANKKW">
+                <input type="hidden" name="on0" value="Color">Color
+                <select name="os0">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="White">White </option>
+                  <option value="Black">Black </option>
+                  <option value="Grey">Grey </option>
+                  <option value="Blue">Blue </option>
+                  <option value="Red">Red </option>
+                </select>
+              </div>
+              <div class="sizes"><input type="hidden" name="on1" value="Size">Size
+                <select name="os1">
+                  Viva Perros Shopping Bag
+                  <option value="S">S </option>
+                  <option value="M">M </option>
+                  <option value="L">L </option>
+                  <option value="XL">XL </option>
+                  <option value="2XL">2XL </option>
+                  <option value="3XL">3XL </option>
+                </select>
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>       
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - SOAP-->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/fur_and_flee_dog_soap.png'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Fur and Flea Dog Soap</a></p>
+            <p class="product-price"><a class="item" href="#">$ 4</a></p>
+          </div>
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="2GB87WGG6MEFG">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>   
+            </form>       
+          </div>
+        </div>
+
+        <!-- Shopping Item - Viva Perros Small Sticker -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/small_viva_perros_sticker.jpg'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Viva Perros Small Sticker</a></p>
+            <p class="product-price"><a class="item" href="#">$ 1</a></p>
+          </div>
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="97N2PC4AK8MFA">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>   
+            </form>       
+          </div>
         </div>
         
-        <div id="close-portal-btn">X</div></div>
-    </div>
-  </div>
-  <!-- End of container -->
- <!-- SHOPPING CART MODAL -->
- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="show-cart table">
-          <!-- CART HERE CART HERE CART HERE CART HERE CART HERE -->
-        </table>
-        <!-- <div>Total price: $<span class="total-cart">0</span></div> -->
-      </div>
-      <div class="modal-footer">
-        <!-- PAYPAL TESTING AREA -->
-        <div class="paypal-pay">
-          <!-- Set up a container element for the button -->
-          <div id="paypal-button-container">Order Now</div>
-          <span id="totalAmountTotalAmount" type="number"></span>
-
-          <!-- Include the PayPal JavaScript SDK -->
-          <script src="https://www.paypal.com/sdk/js?client-id=AcnI1IfekT7sW--clje0cWr72F1yATE0DrVPuza5Xv57cIy01ixj5wj6YY67IYfZxoQWbrg64_M-9HeF&currency=USD"></script>
-          <script>
-          
-
-          </script>
-
+        <!-- Shopping Item - Viva Perros Bumper Sticker -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/viva_perros_bumper_sticker.png'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Viva Perros Bumper Sticker</a></p>
+            <p class="product-price"><a class="item" href="#">$ 2</a></p>
+          </div>
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="853E5DZFYKGXN">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>   
+            </form>       
+          </div>
         </div>
-        <div style="" id="close-cart-btn">
-        <button type="button" class="btn btn-secondary" id="" data-dismiss="modal">Close</button>            
-      </div>
         
+        <!-- Shopping Item - Viva Perros Pulsera -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/viva_perros_pulsera.png'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE TILTLE AND PRICE -->
+            <p class="product-title"><a class="item" href="#">Viva Perros Pulsera</a></p>
+            <p class="product-price"><a class="item" href="#">$ 6</a></p>
+          </div>
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
+              <div class="colors">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <!-- UPDATE VALUE -->
+                  <input type="hidden" name="hosted_button_id" value="6MRSG9RNLRHXE">
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>   
+            </form>       
+          </div>
+        </div>             
+
+        <!-- Shopping Item - BAG - Viva Perros Shopping Bag  -->
+        <div class="shopping-item-card box-shadow">
+          <a class="item" href="#"><img class="shopping-card-image"
+              src='./assets/imgs/inventory/viva_perros_bag.jpg'>
+          </a>
+          <div class="shopping-card-content">
+            <!-- UPDATE VALUE and TEXT -->
+            <p class="product-title"><a class="item" href="#">Viva Perros Shopping Bag</a></p>
+            <p class="product-price"><a class="item" href="#">$ 6</a></p>
+          </div>
+          <div class="place-order-wrapper">
+            <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
+              <div class="colors">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <!-- UPDATE VALUE -->
+                <input type="hidden" name="hosted_button_id" value="7YACRYXXRPMG4">
+                <input type="hidden" name="on0" value="Color">Color
+                <select name="os0">
+                  <!-- UPDATE VALUE and TEXT -->
+                  <option value="Blue">Blue </option>
+                  <option value="Pink">Pink </option>
+                  <option value="Green">Green </option>
+                </select>
+              </div>
+              <div class="add-to-cart-btn-wrapper">
+              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              </div>       
+            </form>       
+          </div>
+        </div>        
+
       </div>
     </div>
-  </div>
-</div> 
+</div>
+    <!-- End of container -->
+
   <!-- Start of footer -->
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer-container">
-        <div>
-          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i
-            class="fas fa-paw footer-paw"></i>
-        </div>
-        <p class="text-muted">
-          &copy; Copyright 2020
-        </p>
-        <ul class="footer-contact-social">
-          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i
-                class="fab fa-facebook"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-          <li><a href=""><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- End of footer -->
+  <footer id="footer"></footer>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <script src="./assets/js/inventory.js"></script>
-  <script src="./assets/js/shop.js"></script>
-  <script src="./assets/js/shop_cart.js"></script>
-  <script src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/inventory.js"></script>
+    <!-- <script src="./assets/js/shop.js"></script>
+  <script src="./assets/js/shop_cart.js"></script> -->
+    <script src="./assets/js/index.js"></script>
 </body>
 <script>
-  
+
 </script>
 
 </html>

@@ -1,9 +1,17 @@
-/* ANCHOR Shoping Cart - 413px */
+#cart-btn, #clear-cart-btn {
+  background: var(--color-gold);
+  font-family: consolas;
+  color: var(--color-cream);
+}
+
+#cart-btn:hover, #clear-cart-btn:hover {
+  background: greenyellow;
+  color: var(--color-brown-o);
+}
 
 .shop-portal-wrapper-show {
   color: var(--color-gold);
   font-weight: bolder;
-  /* opacity: .97; */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -34,7 +42,6 @@
 .shop-portal-container {
   width: 100%;
   height: 100%;
-  /* background: var(--color-black-o); */
   background: black;
   position: relative;
   overflow-x: hidden;
@@ -92,10 +99,7 @@
   object-fit: contain;
 }
 
-#shop-cart-item-img:hover {
-  /* transform: scale(1.10);
-  transition: .5s linear; */
-}
+#shop-cart-item-img:hover {}
 
 .order-grid {
   padding-right: 1.5em;
@@ -127,10 +131,7 @@
   flex-direction: column;
   position: absolute;
   bottom: 0px;
-  /* border: solid red 1px; */
- height: 250px;
-  /*width: 325px; */
-  /* align-items: flex-end; */
+  height: 250px;
   padding: 0 0.5em;
   background: #f6f6f9;
   opacity: .9;
@@ -144,9 +145,7 @@
   top: 0;
   height: auto;
   left: 0;
-  /* border: solid red 1px; */
   width: 100%;
-
 }
 
 .form-group {
@@ -154,7 +153,6 @@
   display: flex;
   flex-direction: column;
   padding-right: 1em;
-
 }
 
 .form-group > input {
@@ -166,7 +164,6 @@
   height: 30px;
   width: 100px;
   font-size: 14px;
-  /* display: block; */
 }
 
 .form-group>label {
@@ -230,7 +227,6 @@
 #return-policy>div {
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 1px solid grey; */
   opacity: .8;
   margin-bottom: 3px;
 }
@@ -267,7 +263,7 @@ td:last-child {
 }
 
 #close-cart-btn {
-
+  color: red;
 }
 
 td>img {

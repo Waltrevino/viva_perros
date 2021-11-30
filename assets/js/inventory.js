@@ -1,4 +1,4 @@
-const inventoryO = [
+const inventory = [
   {
     product_id: 100,
     product_name: "Joe King Carrasco - En La Ruta Maya",
@@ -14,6 +14,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+
   {
     product_id: 101,
     product_name: "Joe King Carrasco - Concierto Para Los Perros",
@@ -28,6 +29,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+
   {
     product_id: 200,
     product_name: "Marty Tribute T-Shirt - Mens",
@@ -42,6 +44,7 @@ const inventoryO = [
     colors: ["White", "Black", "Grey", "Blue", "Red"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
   },
+
   {
     product_id: 201,
     product_name: "Marty Tribute T-Shirt - Womens",
@@ -57,6 +60,7 @@ const inventoryO = [
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
     //sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
   },
+
   {
     product_id: 202,
     product_name: "New Viva Perros T-Shirt",
@@ -71,6 +75,7 @@ const inventoryO = [
     colors: ["White", "Black", "Grey", "Blue", "Red"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
   },
+
   {
     product_id: 203,
     product_name: "Viva Perros Tribute T-Shirt",
@@ -85,6 +90,7 @@ const inventoryO = [
     colors: ["White", "Black", "Grey", "Blue", "Red"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
   },
+
   {
     product_id: 300,
     product_name: "Fur and Flea Dog Soap",
@@ -99,6 +105,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+  
   {
     product_id: 301,
     product_name: 'Viva Perros Small Sticker',
@@ -113,6 +120,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+
   {
     product_id: 302,
     product_name: "Viva Perros Bumper Sticker",
@@ -127,6 +135,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+
   {
     product_id: 303,
     product_name: "Viva Perros Pulsera",
@@ -141,6 +150,7 @@ const inventoryO = [
     colors: [],
     sizes: []
   },
+
   {
     product_id: 304,
     product_name: "Viva Perros Shopping Bag",
@@ -156,5 +166,3 @@ const inventoryO = [
     sizes: []
   }
 ]
-
-// console.log(inventoryO);

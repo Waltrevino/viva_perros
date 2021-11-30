@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="index.html#nav" id="logo">
@@ -31,13 +30,18 @@
             <a class="nav-link-me active" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <a class="nav-link-me dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#">
               Adoptions
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="success.html">Success Stories</a>
               <a class="dropdown-item" href="adopt.html">Meet Our Adoptable Dogs</a>
-              <a class="dropdown-item" href="./assets/docs/Application.pdf">Download Adoption Application   <i
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_adoption_application.pdf">Download Adoption Application <i
+                  class="fas fa-file-download"></i></a>
+              <a class="dropdown-item" target="_blank"
+                href="./assets/docs/viva_perros_pet_adoption_agreement.pdf">Download Pet Adoption Agreement <i
                   class="fas fa-file-download"></i></a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div>
@@ -61,11 +65,11 @@
   <!-- End of navbar -->
 
   <!-- Start of container -->
-  <div class="container container-all box-shadow">
+  <div class="container-all about-container box-shadow ">
     <div class="about-main">
-      <h1 class="page-header">About Viva Perros</h1>
+      <h1 class="page-header wrapper-background">About Viva Perros</h1>
       <hr />
-      <div class="row about-wrapper">
+      <div class="row about-wrapper div-background">
         <div class="col-md-12 about-main">
           <img class="box-shadow" id="about-image" src="./assets/imgs/ruta_maya_cd.PNG" alt="">
           <p class="">Viva Perros is a 501(c)3 nonprofit organization that raises money to help homeless and abused dogs get the medical care they need and find good homes. Joe King Carrasco, known for his revved-up Tex-Mex brand of rock n roll, has been a long time
@@ -78,7 +82,7 @@
           <p class="text-danger font-italic">To learn more about Viva Perros, see one of the videos below.</p>
         </div>
       </div>
-      <div class="row help-raise-wrapper">
+      <div class="row help-raise-wrapper div-background">
         <div class="col-md-12 help-raise-container">
           <p>
             You can help Viva Perros raise money by purchasing an item from the store.</p>
@@ -88,7 +92,7 @@
           <p>Check out one of the videos below to learn more about our organization.</p>
         </div>
       </div>
-      <div class="videos-wrapper">
+      <div class="row videos-wrapper div-background">
         <div class="videos-container">
           <h2>Videos</h2>
           <hr>
@@ -114,25 +118,8 @@
   <!-- End of container -->
 
   <!-- Start of footer -->
-  <footer class="footer">
-    <div class="footer-wrapper">
-      <div class="footer-container">
-        <div>
-          <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i class="fas fa-paw footer-paw"></i>
-        </div>
-        <p class="text-muted">
-          &copy; Copyright 2020
-        </p>
-        <ul class="footer-contact-social">
-          <li><a class="" target="_blank" href=" https://www.facebook.com/vivaperros/"><i class="fab fa-facebook"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-          <li><a href=""><i class="fas fa-envelope"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- End of footer -->
-
+  <footer id="footer"></footer>      
+ 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="./assets/js/index.js"></script>
