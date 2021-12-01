@@ -11,6 +11,32 @@
   margin-right: 0;
 }
 
+.dog-bio-wrapper {
+  border-radius: .75em;
+}
+
+.dog-bio-container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.dog-bio-imgs {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  /* justify-content: center; */
+  gap: .5em;
+}
+
+.dog-bio-imgs > img {
+  width: 100%;
+}
+
+.success-card-container {
+
+}
+
 .success-card-container,
 .success-card-container>.img-wrapper {
   padding: 0;

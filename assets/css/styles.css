@@ -276,10 +276,11 @@ nav {
   display: flex;
   justify-content: space-around;
   padding-top: 1em;
+  padding-left: 0;
 }
 
 .footer-items > .footer-item > ul {
- 
+  text-align: center;
 }
 
 .footer-items > .footer-item > ul > span {
@@ -290,7 +291,7 @@ nav {
 
 .footer-items > .footer-item > ul > li {
   white-space: pre;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .footer-items > .footer-item > ul > li > a {

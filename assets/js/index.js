@@ -79,7 +79,11 @@ function renderFooter(){
           class="fas fa-paw footer-paw"></i>
       </div>
       <p class="text-muted">
-        &copy; Copyright 2020
+        <!-- &copy; Copyright 2020 -->
+        501(c)(3)
+      </p>
+      <p class="text-muted">
+      &copy; Copyright 2020
       </p>
       <ul class="footer-items">
         <li class="footer-item ">
@@ -97,6 +101,7 @@ function renderFooter(){
             <li><a href="https://www.facebook.com/NicaVetsCasaLupita" target="_blank">Casa Lupita Nicaragua</a></li>
             <li><a href="https://www.barriodogs.org" target="_blank">Barrio Dogs</a></li>
             <li><a href="https://spcapv.com" target="_blank">SPCA Puerto Vallarta</a></li>
+            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petinder</a></li>
           </ul>
         </li>
         <li class="footer-item">
@@ -112,6 +117,7 @@ function renderFooter(){
           <ul><span>Contact Us</span>
             <li><a href="https://www.facebook.com/vivaperros/" target="_blank">Facebook</a></li>
             <li><a href="" target="_blank">Twitter</a></li>
+            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petinder</a></li>
             <li><a href="contact.html" target="_blank">Email</a></li>
             <li><a href="faq.html" target="_blank">FAQ</a></li>
           </ul>
