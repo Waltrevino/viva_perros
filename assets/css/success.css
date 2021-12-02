@@ -20,6 +20,8 @@
   padding-right: 1em;
   padding-top: 1.5em;
   padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .dog-bio-imgs {
@@ -65,15 +67,18 @@
 .dog-name {
   font-weight: bold;
   color: #4aaaa5;
-  font-size: 20px;
+  font-size: 1.5em;
+  align-self: center;
 }
 
 .adoption-date {
   display: block;
-  font-size: 14px;
+  font-size: 0.8em;
   padding-top: .25em;
   padding-bottom: 1em;
   color: tomato;
+  align-self: center;
+  padding-bottom: 1.5em;
 }
 
 .dog-desc-main>p {

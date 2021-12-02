@@ -59,7 +59,7 @@ for (var i = 0; i < adoptDogData.length; i++) {
       cards.innerHTML += dogCard;
 
     } else {
-      cards.innerHTML = `<span>No dogs available at this time <br> Please check back later or <br> look for your new best friend on <a href="https://www.petfinder.com" style="color: red">Petfinder.com<a></span>`
+      cards.innerHTML = `<span>No dogs available at this time <br> Please check back later or <br> look for your new best friend on <a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" style="color: red">Petfinder.com<a></span>`
       cards.setAttribute("style", "display: flex; justify-content: center;align-content: center;font-size: 3em;height: 60vh;text-align: center;color: yellow;")
   }
   

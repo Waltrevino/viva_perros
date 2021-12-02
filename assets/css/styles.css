@@ -186,6 +186,7 @@ nav {
 
 .navbar-menu {}
 
+
 .dropdown-menu {
   background-color: var(--color-cream);
 }
@@ -210,12 +211,12 @@ nav {
   color: #FDF9D8;
   display: block;
   text-decoration: none;
-  opacity: .8;
+  /* opacity: .8; */
 }
 
 .nav-item a:hover {
   background-color: rgb(83, 33, 5);
-  color: #ffffff;
+  color: white;
 }
 
 .navbar-toggler-icon {
@@ -274,7 +275,7 @@ nav {
 
 .footer-items {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 1em;
   padding-left: 0;
 }

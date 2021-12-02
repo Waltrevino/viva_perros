@@ -1,11 +1,6 @@
-
-window.onload = () => console.log(window.pageYOffset);
-
-var btn = document.getElementById("myButton");
-
 // 12 Creative CSS and JavaScript Text Typing Animations
 //https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/
-var TxtRotate = function(el, toRotate, period) {
+var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -15,7 +10,7 @@ var TxtRotate = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -41,12 +36,12 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute('data-rotate');
@@ -62,13 +57,15 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-$(".fixed-logo-wrapper").on("click", function() {
+$(".fixed-logo-wrapper").on("click", function () {
   $(this).addClass("hide");
   console.log("clicked");
 })
 
+// RENDER NAVBAR
+
 // DISPLAY FOOTER. 
-function renderFooter(){
+function renderFooter() {
   var footer = document.getElementById("footer")
 
   var footerContent = `
@@ -129,4 +126,28 @@ function renderFooter(){
   footer.innerHTML = footerContent;
 }
 
-renderFooter();
+ renderFooter();
+
+var navLinks = () => {
+  var navLink = document.querySelectorAll(".nav-link-me");
+  navLink.forEach(link => {
+    link.setAttribute("style", "font-weight: bolder");
+  })
+}
+
+navLinks();
+// setActiveLinkBackground();
+
+// function setActiveLinkBackground() {
+//   var $navLinks = document.querySelectorAll(".nav-link-me");
+//   console.log($navLinks);
+//   for (var i = 0; i < $navLinks.length; i++) {
+//     if ($navLinks[i].classList.contains("active")) {
+//       $navLinks[i].setAttribute("style", "color: #FDF9D8;font-weight: bolder")
+//     }
+//   }
+// }
+
+
+
+
