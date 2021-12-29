@@ -1,21 +1,3 @@
-.fa-cart:hover {
-  cursor: pointer;
-}
-
-#lblCartCount {
-  font-size: 12px;
-  background: brown;
-  color: #fff;
-  padding: 0 5px;
-  vertical-align: top;
-  margin-left: -7px;
-
-}
-
-.shop-container {}
-
-.shop-main {}
-
 .shopping-cards-container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -23,10 +5,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   grid-auto-rows: auto;
-  gap: 0.8em;
+  gap: 0.5em;
   font-family: sans-serif;
   transition: .25s;
-  margin-bottom: 0.5em;
+  padding-top: 1em;
+  padding: 1em 0.5em;
 }
 
 .shopping-item-card {
@@ -59,13 +42,10 @@
   height: 250px;
   object-fit: contain;
   display: block;
-  padding: .5em;
-  transition: 1.6s;
+  padding: .5em; 
 }
 
 .shopping-card-image:hover {
-  transform: scale(1.5);
-  transition: .8s all linear;
   position: relative;
   border-radius: 15%;
 }
@@ -81,7 +61,6 @@
   justify-content: center;
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-
 }
 
 .product-title>a {
@@ -108,35 +87,12 @@
 }
 
 .header-shopping-cart-img {
-  height: 2em;
-  position: relative;
+  height: 1.75em;
+  position: absolute;
   padding-top: 0;
-  top: .4em;
+  top: -0.65em;
 }
 
-/* item count label */
-.badge {
-  padding-left: 9px;
-  padding-right: 9px;
-  border-radius: 9px;
-}
-
-.test-btn-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.add-to-cart-form {
-  display: flex;
-  border: solid red 2px;
-  width: 100%;
-  flex-direction: column;
-  align-content: flex-end;
-}
-
-/* ----------------------------------------------------- */
 .place-order-wrapper {
   padding-top: .5em;
 }
@@ -157,8 +113,6 @@
   height: 3em;
 }
 
-.sizes {}
-
 .add-to-cart-btn-wrapper {
   grid-area: button;
   display: flex;
@@ -167,8 +121,8 @@
   padding-bottom: .5em;
 }
 
-.add-to-cart-boton {
+.add-to-cart-btn {
   grid-area: button;
-  height: 1.8em;
+  height: 1.75;
 }
 

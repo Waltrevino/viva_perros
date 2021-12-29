@@ -1,17 +1,16 @@
 .contact-container {
-  background-color: var(--color-cream);
-  margin-bottom: .5em;
+  background-color: var(--color-cream); 
 }
 
 .contact-main {
-  height: 100vh;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 0.5em;
 }
 
-.contact-block {}
+.contact-block {
+  padding-top: 1em;
+}
 
 .partners {
-  overflow-wrap: break-word;
+  word-wrap: break-word;
   hyphens: auto;
 }

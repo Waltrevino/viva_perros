@@ -1,5 +1,7 @@
 #donate-button-container {
     height: 50vh;
+    display: grid;
+    place-items: center;
 }
 
 #donate-button  {

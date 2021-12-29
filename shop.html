@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,25 +24,22 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-  <link rel="stylesheet" href="assets/css/shop_cart.css" media="screen">
   <link rel="stylesheet" href="assets/css/shop.css" media="screen">
-  <link rel="stylesheet" href="assets/css/413px.css" media="screen">
+  <link rel="stylesheet" href="assets/css/media.css" media="screen">
 </head>
-
 <body>
   <!-- NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-lg box-shadow" id="nav">
     <div class="container">
       <!-- BRAND -->
       <a class="navbar-brand" href="index.html#nav" id="logo">
-        <div class="navbar-brand-main"><img class="" id="navbar-logo-img" src="./assets/imgs/logo.png"
-            alt="logo_img"><span class="navbar-brand-text">Viva
-            Perros</span>
+        <div class="navbar-brand-main">
+          <img class="" id="navbar-logo-img" src="./assets/imgs/logo.png"alt="logo_img">
+          <span class="navbar-brand-text ">Viva Perros</span>
           <div id="header-shopping-cart">
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="encrypted"
-              value="_s-xclick">
+              <input type="hidden" name="encrypted" value="_s-xclick">
               <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">              <input class="header-shopping-cart-img" style="" type="image" src="./assets/imgs/cart-img.png" border="0" name="submit">
             </form>
           </div>
@@ -92,26 +88,22 @@
     </div>
   </nav>
   <!-- End of navbar -->
-
   <!-- Start of container -->
   <div class="container-all shop-container">
     <div class="shop-main">
-      <h1 class="page-header">Shop</h1>
-      <hr />
-      <div class="shopping-cards-container">
-        
+      <div class="page-header"><span id="page-title">Shop</span></div>
+      <div class="shopping-cards-container"> 
+
         <!-- Shopping Item - JOE KINK CARRASCO - EN LA RUTA MAYA-->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/jkc_en_la_ruta_maya.jpg'>
           </a>
-
           <div class="shopping-card-content">
             <!-- UPDATE TILTLE AND PRICE -->
             <p class="product-title"><a class="item" href="#">Joe King Carrasco - En La Ruta May</a></p>
             <p class="product-price"><a class="item" href="#">$ 12</a></p>
           </div>
-
           <div class="place-order-wrapper">
             <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">      
               <div class="colors">
@@ -120,7 +112,7 @@
                   <input type="hidden" name="hosted_button_id" value="PKF79DBVPY4C6">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>   
             </form>       
@@ -129,7 +121,7 @@
 
         <!-- Shopping Item - JOE KINK CARRASCO - CD CONCIERTO PARA LOS PERROS -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/jkc_concierto_para_los_perros.jpg'>
           </a>
           <div class="shopping-card-content">
@@ -137,7 +129,6 @@
             <p class="product-title"><a class="item" href="#">Joe King Carrasco - Concierto Para Los Perros</a></p>
             <p class="product-price"><a class="item" href="#">$ 12</a></p>
           </div>
-
           <div class="place-order-wrapper">
             <form class="place-order-container" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">       
               <div class="colors">
@@ -146,7 +137,7 @@
                   <input type="hidden" name="hosted_button_id" value="XNQRQCU489XEQ">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>    
             </form>       
@@ -155,7 +146,7 @@
 
         <!-- Shopping Item - - Marty Tribute T-Shirt - Mens -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_men.jpg'>
+          <a class="item"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_men.jpg'>
           </a>      
           <div class="shopping-card-content">
             <!-- UPDATE TILTLE AND PRICE -->
@@ -190,7 +181,7 @@
                 </select>
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>       
             </form>       
@@ -199,7 +190,7 @@
 
         <!-- Shopping Item - Marty Tribute T-Shirt - Womens -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_women.jpg'>
+          <a class="item"><img class="shopping-card-image" src='./assets/imgs/inventory/marty_tribute_shirt_women.jpg'>
           </a>      
           <div class="shopping-card-content">
             <!-- UPDATE TILTLE AND PRICE -->
@@ -234,7 +225,7 @@
                 </select>
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>       
             </form>       
@@ -243,7 +234,7 @@
 
         <!-- Shopping Item - New Viva Perros T-Shirt -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/new_viva_perros_shirt.jpg'>
+          <a class="item"><img class="shopping-card-image" src='./assets/imgs/inventory/new_viva_perros_shirt.jpg'>
           </a>      
           <div class="shopping-card-content">
             <!-- UPDATE TILTLE AND PRICE -->
@@ -278,7 +269,7 @@
                 </select>
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>       
             </form>       
@@ -287,7 +278,7 @@
 
         <!-- Shopping Item - Viva Perros Tribute T-Shirt -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image" src='./assets/imgs/inventory/viva_perros_tribute_shirt.jpg'>
+          <a class="item"><img class="shopping-card-image" src='./assets/imgs/inventory/viva_perros_tribute_shirt.jpg'>
           </a>      
           <div class="shopping-card-content">
             <!-- UPDATE TILTLE AND PRICE -->
@@ -322,7 +313,7 @@
                 </select>
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>       
             </form>       
@@ -331,7 +322,7 @@
 
         <!-- Shopping Item - SOAP-->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/fur_and_flee_dog_soap.png'>
           </a>
           <div class="shopping-card-content">
@@ -347,7 +338,7 @@
                   <input type="hidden" name="hosted_button_id" value="2GB87WGG6MEFG">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>   
             </form>       
@@ -356,7 +347,7 @@
 
         <!-- Shopping Item - Viva Perros Small Sticker -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/small_viva_perros_sticker.jpg'>
           </a>
           <div class="shopping-card-content">
@@ -372,7 +363,7 @@
                   <input type="hidden" name="hosted_button_id" value="97N2PC4AK8MFA">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>   
             </form>       
@@ -381,7 +372,7 @@
         
         <!-- Shopping Item - Viva Perros Bumper Sticker -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/viva_perros_bumper_sticker.png'>
           </a>
           <div class="shopping-card-content">
@@ -397,7 +388,7 @@
                   <input type="hidden" name="hosted_button_id" value="853E5DZFYKGXN">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>   
             </form>       
@@ -406,7 +397,7 @@
         
         <!-- Shopping Item - Viva Perros Pulsera -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/viva_perros_pulsera.png'>
           </a>
           <div class="shopping-card-content">
@@ -422,7 +413,7 @@
                   <input type="hidden" name="hosted_button_id" value="6MRSG9RNLRHXE">
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>   
             </form>       
@@ -431,7 +422,7 @@
 
         <!-- Shopping Item - BAG - Viva Perros Shopping Bag  -->
         <div class="shopping-item-card box-shadow">
-          <a class="item" href="#"><img class="shopping-card-image"
+          <a class="item"><img class="shopping-card-image"
               src='./assets/imgs/inventory/viva_perros_bag.jpg'>
           </a>
           <div class="shopping-card-content">
@@ -454,32 +445,21 @@
                 </select>
               </div>
               <div class="add-to-cart-btn-wrapper">
-              <input class="add-to-cart-boton" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+              <input class="add-to-cart-btn" id="" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
                 alt="PayPal - The safer, easier way to pay online!">
               </div>       
             </form>       
           </div>
-        </div>        
+        </div>
 
       </div>
     </div>
-</div>
-    <!-- End of container -->
-
+  </div>
+  <!-- End of container -->
   <!-- Start of footer -->
   <footer id="footer"></footer>
-
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <script src="./assets/js/inventory.js"></script>
-    <!-- <script src="./assets/js/shop.js"></script>
-  <script src="./assets/js/shop_cart.js"></script> -->
     <script src="./assets/js/index.js"></script>
 </body>
-<script>
-
-</script>
-
 </html>

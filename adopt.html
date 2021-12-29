@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   <link rel="stylesheet" href="assets/css/adopt.css" media="screen">
-  <link rel="stylesheet" href="assets/css/413px.css" media="screen">
+  <link rel="stylesheet" href="assets/css/media.css" media="screen">
 </head>
-
 <body>
   <!-- NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-lg box-shadow" id="nav">
@@ -64,26 +62,21 @@
         </ul>
       </div>
     </div>
-  </nav>
-  
+  </nav>  
   <!-- Start of container -->
   <div class="container-all adopt-container">
     <div class="adopt-main">
-      <h1 class="page-header">Awesome Adoptable Dogs</h1>
-      <hr />
-      <div class="row adoptable-dogs-container" id="carta"></div>
+      <div class="page-header"><span id="page-title">Awesome Adoptable Dogs</span></div>
+        <!-- Dogs for adoption will be renedered here -->
+        <div class="row adoptable-dogs-container" id="carta"></div>
     </div>
   </div>
   <!-- End of container -->
-
   <!-- Start of footer -->
   <footer id="footer"></footer>
-
-
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="./assets/js/adopt.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
-
 </html>

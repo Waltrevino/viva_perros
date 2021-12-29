@@ -1,73 +1,41 @@
-.success-container {}
-
-.success-main {}
-
-.success-cards-wrapper {}
-
-.success-cards-container {}
-
 .success-dog-card {
   margin-left: 0;
   margin-right: 0;
 }
 
-.dog-bio-wrapper {
-  border-radius: .75em;
+.dog-bio-wrapper > p {
+  padding-left: 0.5em;
 }
 
 .dog-bio-container {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1.5em;
+  padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
-.dog-bio-imgs {
-  display: grid;
-  grid-template-columns: 49% 49%;
-  /* justify-content: center; */
-  gap: .5em;
+.dog-bio-container > p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
-.dog-bio-imgs > img {
-  width: 100%;
+.dog-bio-container:before {
+  width: 25%;
+  border: solid var(--color-turquoise) 1px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background-color: var(--color-turquoise);
 }
 
-.success-card-container {
-
-}
-
-.success-card-container,
-.success-card-container>.img-wrapper {
-  padding: 0;
-}
-
-.success-dog-card>.dog-desc {
-  padding-top: .5em;
-}
-
-.img-wrapper {
-  width: 100%;
-  padding: 1em;
-}
-
-.success-dog-img {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-.success-card-container,
-.success-card-container>.img-wrapper {
-  padding: 0;
+.dog-name {
+  padding-top: 1em;
 }
 
 .dog-name {
   font-weight: bold;
   color: #4aaaa5;
-  font-size: 1.5em;
+  font-size: 1.25em;
   align-self: center;
 }
 
@@ -81,6 +49,12 @@
   padding-bottom: 1.5em;
 }
 
-.dog-desc-main>p {
-  text-align: justify;
+.dog-bio-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1em;
+}
+
+.dog-bio-imgs > img {
+  width: 100%;
 }

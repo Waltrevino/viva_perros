@@ -57,31 +57,31 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
+setActiveLinkBackground();
+renderFooter();
+
 $(".fixed-logo-wrapper").on("click", function () {
   $(this).addClass("hide");
   console.log("clicked");
 })
 
-// RENDER NAVBAR
+// Add style to active links on navbar
+function setActiveLinkBackground() {
+  var $navLinks = document.querySelectorAll(".nav-link-me");
+  for (var i = 0; i < $navLinks.length; i++) {
+    if ($navLinks[i].classList.contains("active")) {
+      $navLinks[i].setAttribute("style", "color: #FDF9D8;font-weight: bolder")
+    }
+    $navLinks[i].setAttribute("style", "font-weight: bolder");
+  }
+}
 
-// DISPLAY FOOTER. 
+// DISPLAY FOOTER
 function renderFooter() {
   var footer = document.getElementById("footer")
-
   var footerContent = `
     <div class="footer-wrapper">
-    <div class="footer-container">
-      <div>
-        <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text">Viva Perros</span><i
-          class="fas fa-paw footer-paw"></i>
-      </div>
-      <p class="text-muted">
-        <!-- &copy; Copyright 2020 -->
-        501(c)(3)
-      </p>
-      <p class="text-muted">
-      &copy; Copyright 2020
-      </p>
+    <div class="footer-container"> 
       <ul class="footer-items">
         <li class="footer-item ">
           <ul><span>Viva Perros</span>
@@ -98,7 +98,7 @@ function renderFooter() {
             <li><a href="https://www.facebook.com/NicaVetsCasaLupita" target="_blank">Casa Lupita Nicaragua</a></li>
             <li><a href="https://www.barriodogs.org" target="_blank">Barrio Dogs</a></li>
             <li><a href="https://spcapv.com" target="_blank">SPCA Puerto Vallarta</a></li>
-            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petinder</a></li>
+            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petfinder</a></li>
           </ul>
         </li>
         <li class="footer-item">
@@ -113,41 +113,35 @@ function renderFooter() {
         <li  class="footer-item">
           <ul><span>Contact Us</span>
             <li><a href="https://www.facebook.com/vivaperros/" target="_blank">Facebook</a></li>
-            <li><a href="" target="_blank">Twitter</a></li>
-            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petinder</a></li>
+            <li><a href="https://www.instagram.com/vivaperros/?hl=en" target="_blank">Instagram</a></li>
+            <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petfinder</a></li>
             <li><a href="contact.html" target="_blank">Email</a></li>
             <li><a href="faq.html" target="_blank">FAQ</a></li>
           </ul>
         </li>        
       </ul>
+      <div>
+        <i class="fas fa-paw footer-paw"></i><span class="footer-logo-text"><a href='./index.html'>Viva Perros</a></span><i
+          class="fas fa-paw footer-paw"></i>
+      </div>
+      <p class="text-muted">
+        501(c)(3)
+      </p>
+      <p class="text-muted">
+        &copy; Copyright 2021 WZE Inc.
+      </p>
     </div>
   </div>`
-
   footer.innerHTML = footerContent;
 }
 
- renderFooter();
-
-var navLinks = () => {
-  var navLink = document.querySelectorAll(".nav-link-me");
-  navLink.forEach(link => {
-    link.setAttribute("style", "font-weight: bolder");
+// Make full screen when pager header is clicked
+document.querySelector("#page-title").addEventListener
+  ('click', (e) => {
+    e.preventDefault();
+    $body = document.querySelector("body");
+    const $makeFullScreen = document.querySelector("#page-title");
+    if ($body.requestFullscreen()) {
+      $body.requestFullscreen();
+    }
   })
-}
-
-navLinks();
-// setActiveLinkBackground();
-
-// function setActiveLinkBackground() {
-//   var $navLinks = document.querySelectorAll(".nav-link-me");
-//   console.log($navLinks);
-//   for (var i = 0; i < $navLinks.length; i++) {
-//     if ($navLinks[i].classList.contains("active")) {
-//       $navLinks[i].setAttribute("style", "color: #FDF9D8;font-weight: bolder")
-//     }
-//   }
-// }
-
-
-
-

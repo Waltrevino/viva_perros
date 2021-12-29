@@ -1,23 +1,30 @@
 .adopt-container {
- 
+  background-color: var(--color-cream);
+  opacity: .9;
 }
 
 .adoptable-dogs-container {
   display: flex;
   justify-content: left;
-  padding-left: 15px;
+  padding: 0.5em 0.25em 1em;
   margin-left: 0;
   margin-right: 0;
+  background-color: var(--color-cream);
 }
 
-.card-title {
-  color: tomato;
-  font-weight: bold;
+.no-dogs-msg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 2.25em;
+  height: 60vh;
+  text-align: center;
+  color: red;
+  line-height: 1.5em;
 }
 
 .card-wrapper {
-  padding-left: 0px;
-  padding-bottom: 1em;
+  padding: 0 0.5em 1em;
 }
 
 .adopt-dog-card {
@@ -38,4 +45,10 @@
   background-color: #ffa;
   padding: 1em;
   opacity: .80;
+  text-align: center;
+}
+
+.card-title {
+  color: tomato;
+  font-weight: bold;
 }
