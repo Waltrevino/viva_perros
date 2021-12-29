@@ -128,7 +128,7 @@ function renderFooter() {
         501(c)(3)
       </p>
       <p class="text-muted">
-        &copy; Copyright 2021 WZE Inc.
+        &copy; Copyright 2021 WZE TekSolutions
       </p>
     </div>
   </div>`
