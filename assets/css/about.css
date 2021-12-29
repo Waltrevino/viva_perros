@@ -23,6 +23,12 @@
   text-align: justify;
 }
 
+#learn-more {
+  color:red;
+  font-style: italic;
+  text-align: center;
+}
+
 .help-raise-wrapper {
   text-align: center;
   padding: 0.5em;
