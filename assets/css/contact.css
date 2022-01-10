@@ -1,6 +1,4 @@
-.contact-container {
-  background-color: var(--color-cream); 
-}
+.contact-container {}
 
 .contact-main {
   padding: 0 0.5em;
@@ -8,6 +6,15 @@
 
 .contact-block {
   padding-top: 1em;
+}
+
+.contact-block > div > a {
+  text-decoration: none;
+}
+
+.contact-block > div > a:hover {
+  color: blue;
+  font-weight: lighter;
 }
 
 .partners {

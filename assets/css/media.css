@@ -77,6 +77,10 @@
   #video-player-main {
     width: 100%;
   }
+
+  .no-dogs-msg {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -177,7 +181,7 @@
   }
   
   .text-muted {
-    font-size: 0.5em;
+    font-size: 0.65em;
   }
 }
 
@@ -258,7 +262,7 @@
   }
 
   .no-dogs-msg {
-    font-size: 2.5em;
+    font-size: 2em;
     height: 60vh;
   }
 

@@ -29,14 +29,11 @@
 }
 
 .dog-name {
-  padding-top: 1em;
-}
-
-.dog-name {
   font-weight: bold;
   color: #4aaaa5;
   font-size: 1.25em;
-  align-self: center;
+  text-align: center;
+  padding-top: 1em;
 }
 
 .adoption-date {

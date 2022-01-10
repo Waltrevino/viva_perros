@@ -93,11 +93,11 @@ function renderFooter() {
         <li class="footer-item">
           <ul><span>Partners</span>
             <li><a href="http://joeking.com" target="_blank">Joe King Carrasco</a></li>
-            <li><a href="http://www.utopiarescue.com" target="_blank">Utopia Animal Rescue Ranch</a></li>
             <li><a href="https://www.austinpetsalive.org" target="_blank">Austin Pets Alive</a></li>
             <li><a href="https://www.facebook.com/NicaVetsCasaLupita" target="_blank">Casa Lupita Nicaragua</a></li>
             <li><a href="https://www.barriodogs.org" target="_blank">Barrio Dogs</a></li>
             <li><a href="https://spcapv.com" target="_blank">SPCA Puerto Vallarta</a></li>
+            <li><a href="https://www.sos-animales-nica.org" target="_blank">Animales Nicaragua SOS</a></li>
             <li><a href="https://www.petfinder.com/member/us/tx/austin/viva-perros-tx2459/" target="_blank">Petfinder</a></li>
           </ul>
         </li>
@@ -136,7 +136,8 @@ function renderFooter() {
 }
 
 // Make full screen when pager header is clicked
-document.querySelector("#page-title").addEventListener
+if (window.location.pathname !== '/index.html'){
+  document.querySelector("#page-title").addEventListener
   ('click', (e) => {
     e.preventDefault();
     $body = document.querySelector("body");
@@ -144,4 +145,5 @@ document.querySelector("#page-title").addEventListener
     if ($body.requestFullscreen()) {
       $body.requestFullscreen();
     }
-  })
+  });
+}

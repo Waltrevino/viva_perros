@@ -3,6 +3,7 @@
   --color-brown: rgb(83, 33, 5);
   --color-brown-o: rgba(83, 33, 5, 8);
   --color-cream: #FDF9D8;
+  --color-cream-o: rgba(253,249,216, 0.9);
   --color-gold: #b48345;
   --color-turquoise: #4aaaa5;
   --background-cool_stucco: url("../imgs/brown_stucco.jpg");
@@ -64,27 +65,8 @@ a {
   box-shadow: 4px 4px 8px rgba(83, 33, 5, .8);
 }
 
-.div-background {
-  background-color: var(--color-cream);
-  /* margin-bottom: .5em; */
-}
-
 .hide {
   display: none;
-}
-
-.page-header {
-  color: rgb(116,33,53);
-  background-color: var(--color-cream);
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2.5em;
-  padding-top: 0.25em;
-}
-
-#page-title {
- color: inherit;
 }
 /*-------------------------CUSTOM FOR-ALL CLASSES-------------------------*/
 
@@ -228,9 +210,21 @@ nav {
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--color-cream);
-  opacity: 0.9;
+  background-color:rgba(253,249,216, 0.9);
 }
+
+.page-header {
+  color: rgb(116,33,53);
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 0.25em;
+}
+
+#page-title {
+  color: inherit;
+ }
 
 /* FOOTER */
 .footer-wrapper {

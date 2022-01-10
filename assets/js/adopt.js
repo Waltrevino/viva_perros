@@ -47,7 +47,7 @@ for (var i = 0; i < adoptDogData.length; i++) {
   if (dogsForAdoption){
       var dogCard = `<div class="col-md-6 card-wrapper">
       <div class="card adopt-dog-card box-shadow" style="width: 100%;">
-        <img src=${adoptDogData[i].src} class="card-img-top" alt="...">
+        <img src=${adoptDogData[i].src} class="card-img-top" alt="${adoptDogData[i].name} pic">
         <div class="card-body">
           <h5 class="card-title">${adoptDogData[i].name}</h5>
           <p class="card-text">${adoptDogData[i].message}</p>
